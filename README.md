@@ -1,2 +1,3 @@
 # FYP_AI-Effect
-ai_effect
+ai_effect</br>
+https://docs.ultralytics.com/zh/modes/predict/#inference-arguments
