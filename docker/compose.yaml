@@ -1,0 +1,22 @@
+services:
+  ningix:
+    image: nginx
+    ports:
+      - "80:80"
+
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - fyp_effect
+
+  fyp_effect:
+    image: test
+    expose:
+      - 8000
+    deploy:
+        resources:
+            reservations:
+                devices:
+                  - driver: "nvidia"
+                    count: "all"
+                    capabilities: ["gpu"]
