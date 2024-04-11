@@ -1,5 +1,8 @@
 # 引入python版本
-FROM python:3.10.1
+# FROM python:3.10.1
+
+
+FROM ultralytics/ultralytics:latest
 
 # 设置时间
 RUN ln -sf /usr/share/zoneinfo/Asia/Beijing/etc/localtime

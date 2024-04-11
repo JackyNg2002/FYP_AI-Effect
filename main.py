@@ -5,6 +5,11 @@ import base64
 import cv2
 import numpy as np
 from ultralytics import YOLO
+import torch
+
+
+#print cuda is available
+print("Cuda is available: ",torch.cuda.is_available())
 
 # Load a model
 models={
